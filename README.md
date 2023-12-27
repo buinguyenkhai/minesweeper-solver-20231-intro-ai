@@ -28,7 +28,18 @@ ESC: Return to main menu
 ### Analysis
 If you wish to run the AI solver automatically for analysis:
 
-- On line 425 in main.py, disable main_menu() and replace it with play_multiple_games(*agent_type*, *iterations*, *guess method*=1)
+On line 425 in main.py, disable main_menu() and replace it with play_multiple_games(*agent_type*, *iterations*, *guess_method*=1)
+```
+#main_menu()
+play_multiple_games(2, 10000)
+```
+guess_method is optional and only applicable for agent_type = 3
+Example:
+```
+play_multiple_games(3, 10000, 2)
+```
+**The screen and fps has been disabled for maximum performance**
+
 ### Authors
 
 Nguyen Trong Phuong Bach 20225473
