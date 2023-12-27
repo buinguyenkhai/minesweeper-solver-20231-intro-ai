@@ -34,6 +34,7 @@ On line 425 in main.py, disable main_menu() and replace it with play_multiple_ga
 play_multiple_games(2, 10000)
 ```
 guess_method is optional and only applicable for agent_type = 3
+
 Example:
 ```
 play_multiple_games(3, 10000, 2)
