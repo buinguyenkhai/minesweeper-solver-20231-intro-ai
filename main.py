@@ -422,5 +422,5 @@ def choose_guess_method():
 
 
 if __name__ == '__main__':
-    #main_menu()
-    play_multiple_games(2, 10000)
+    main_menu()
+    #play_multiple_games(2, 10000)
