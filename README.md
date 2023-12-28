@@ -26,7 +26,7 @@ Right click: Flag/Unflag a tile
 ESC: Return to main menu
 
 ### Analysis
-If you wish to run the AI solver automatically for analysis, you can add these parameters:
+If you wish to run the AI solver automatically for analysis, you can add these parameters as integers:
 ```
 python main.py agent_type iter guess_method
 ```
