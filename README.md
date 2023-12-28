@@ -11,7 +11,7 @@ pip install pygame
 
 The main script of the project is run_game.py. It can be run from the command line using the following command:
 ```
-python run_game.py
+python main.py
 ```
 
 Expected result
@@ -26,18 +26,19 @@ Right click: Flag/Unflag a tile
 ESC: Return to main menu
 
 ### Analysis
-If you wish to run the AI solver automatically for analysis:
-
-On line 425 in main.py, disable main_menu() and replace it with play_multiple_games(*agent_type*, *iterations*, *guess_method*=1)
+If you wish to run the AI solver automatically for analysis, you can add these parameters:
 ```
-#main_menu()
-play_multiple_games(2, 10000)
+python main.py *agent_type* *iter* *guess_method*
 ```
 guess_method is optional and only applicable for agent_type = 3
 
 Example:
 ```
-play_multiple_games(3, 10000, 2)
+python main.py 3 100000 2
+```
+or
+```
+python main.py 2 100000
 ```
 **The screen and fps has been disabled for maximum performance**
 
