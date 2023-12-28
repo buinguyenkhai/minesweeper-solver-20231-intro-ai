@@ -26,11 +26,23 @@ Right click: Flag/Unflag a tile
 ESC: Return to main menu
 
 ### Analysis
-If you wish to run the AI solver automatically for analysis, you can add these parameters as integers:
+If you wish to run the AI solver automatically for analysis, you can add these parameters:
 ```
 python main.py agent_type iter guess_method
 ```
-guess_method is optional and only applicable for agent_type = 3
+agent_type = 1 : Generate Configuration Solver
+
+agent_type = 2 : Probability Theory Solver
+
+agent_type = 3 : Set Based Solver
+
+iter : number of iterations
+
+guess_method : optional and only applicable for agent_type = 3
+
+guess_method = 1 : Generate Configuration
+
+guess_method = 2 : Probability Theory
 
 Example:
 ```
