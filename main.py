@@ -4,6 +4,7 @@ from sprites import *
 from minesweeperAI import *
 from time import sleep
 from button import Button
+import sys
 
 pygame.init()
 
@@ -420,7 +421,17 @@ def choose_guess_method():
                     
         pygame.display.update()
 
-
 if __name__ == '__main__':
-    main_menu()
-    #play_multiple_games(2, 10000)
+    if len(sys.argv) == 1:
+        main_menu()
+    elif len(sys.argv) == 3:
+        agent_type = int(sys.argv[1])
+        iter = int(sys.argv[2])
+        play_multiple_games(agent_type, iter)
+    elif len(sys.argv) == 4:
+        agent_type = int(sys.argv[1])
+        iter = int(sys.argv[2])
+        guess_method = int(sys.argv[3])
+        play_multiple_games(agent_type, iter, guess_method)
+    else:
+        print('InvalidParameterError: Invalid number of parameters')
