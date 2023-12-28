@@ -28,7 +28,7 @@ ESC: Return to main menu
 ### Analysis
 If you wish to run the AI solver automatically for analysis, you can add these parameters:
 ```
-python main.py agent_type iter guess_method
+python main.py*agent_type**iter**guess_method*
 ```
 guess_method is optional and only applicable for agent_type = 3
 
