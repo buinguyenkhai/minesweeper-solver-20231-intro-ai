@@ -30,19 +30,19 @@ If you wish to run the AI solver automatically for analysis, you can add these p
 ```
 python main.py agent_type iter guess_method
 ```
-agent_type = 1 : Generate Configuration Solver
+*agent_type* = 1 : Generate Configuration Solver
 
-agent_type = 2 : Probability Theory Solver
+*agent_type* = 2 : Probability Theory Solver
 
-agent_type = 3 : Set Based Solver
+*agent_type* = 3 : Set Based Solver
 
-iter : number of iterations
+*iter* : number of iterations
 
-guess_method : optional and only applicable for agent_type = 3
+*guess_method* : optional and only applicable for agent_type = 3
 
-guess_method = 1 : Generate Configuration
+*guess_method* = 1 : Generate Configuration
 
-guess_method = 2 : Probability Theory
+*guess_method* = 2 : Probability Theory
 
 Example:
 ```
