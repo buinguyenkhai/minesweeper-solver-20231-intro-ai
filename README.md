@@ -44,8 +44,6 @@ guess_method = 1 : Generate Configuration
 
 guess_method = 2 : Probability Theory
 
-
-
 Example:
 ```
 python main.py 3 100000 2
