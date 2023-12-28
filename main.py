@@ -422,16 +422,15 @@ def choose_guess_method():
         pygame.display.update()
 
 if __name__ == '__main__':
+    # Running the game
     if len(sys.argv) == 1:
         main_menu()
-    elif len(sys.argv) == 3:
-        agent_type = int(sys.argv[1])
-        iter = int(sys.argv[2])
+    # Analysis
+    elif len(sys.argv) == 3: # 2 parameters
+        agent_type, iter = map(int, sys.argv[1:])
         play_multiple_games(agent_type, iter)
-    elif len(sys.argv) == 4:
-        agent_type = int(sys.argv[1])
-        iter = int(sys.argv[2])
-        guess_method = int(sys.argv[3])
+    elif len(sys.argv) == 4: # 3 parameters
+        agent_type, iter, guess_method = map(int, sys.argv[1:])
         play_multiple_games(agent_type, iter, guess_method)
-    else:
+    else: # Invalid parameters
         print('InvalidParameterError: Invalid number of parameters')
